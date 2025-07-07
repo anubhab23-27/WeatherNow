@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeatherNow</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/home.css" />
@@ -22,9 +21,8 @@
     <div class="start">
       <div class="startleft">
         <div class="leftcontent">
-          <h1 style="font-family: 'Poppins', sans-serif;">Welcome to WeatherNow</h1>
-          <p>Access current weather data for any location around the world, including cities, towns, and GPS coordinates.
-            Get real-time information such as temperature, humidity, wind speed, and weather conditions.</p>
+          <h1 style="font-family: 'Poppins', sans-serif;"><%= error %></h1>
+          <p>Please try another Location</p>
           <form method="POST" action="/location" class="searchbarp1">
             <input
               id="searchinputp1"

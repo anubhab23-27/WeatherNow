@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherNow</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -16,14 +17,14 @@
           <h3 style="font-family: 'Inter', sans-serif;">WeatherNow</h3>
         </nav>
         <div class="maintemp">
-          
+       
           <div class="weather-container">
             <div class="temperature"><%=content.main.temp%>°</div>
             <div class="info">
               <div class="city"><%= content.name %></div>
               <div class="date"><p id="dateDisplay">06:09 - Monday, 9 Sep 23</p></div>
             </div>
-            <div class="icon">☁️</div>
+            <div class="icon">☀️</div>
           </div>
            
         </div>
@@ -51,12 +52,18 @@
             <tr><td>Humidity</td><td><%= content.main.humidity %>%</td></tr>
             <tr><td>Cloudy</td><td><%= content.clouds.all %>%</td></tr>
             <tr><td>Wind</td><td><%= content.wind.speed%>km/h</td></tr>
+            <tr><td>Visibility</td><td><%= content.visibility%>m</td></tr>
+            <tr><td>Pressure</td><td><%= content.main.pressure%>mb</td></tr>
           </table>
           
           
         </div>
       </div>
     </div>
+    
   </body>
+  <script>
+    window.weatherMain = "<%= content.weather[0].main %>";
+  </script>
   <script src="script.js"></script>
 </html>

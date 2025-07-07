@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-size: cover;
+}
 .main{
     display: flex;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../images/sunny2.jpg");
+    /* background-image: url("../images/sunny2.jpg"); */
     background-size: cover;
     color: whitesmoke;
     
@@ -60,6 +63,7 @@ nav img{
     outline: none;
     border: none;
     background-color: transparent;
+    color: white;
     
 }
 #searchinput:focus {
