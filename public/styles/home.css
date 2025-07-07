@@ -1,0 +1,106 @@
+*{
+    padding: 0;margin: 0;
+    font-size: large;
+}
+body{
+    background-image: url("../images/dan-otis-OYFHT4X5isg-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 8vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vh 6vw;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 70px;
+}
+.start{
+    display: flex;
+    
+}
+.startleft{
+   
+    width: 60vw;
+    height: 72vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    padding-top: 15vh;
+}
+.leftcontent>*{
+    margin: 4vh;
+}
+.startright{
+    
+    width: 40vw;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ...existing code... */
+.searchbarp1 {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 2px 12px;
+    transition: box-shadow 0.2s;
+      
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.searchbarp1:focus-within {
+    box-shadow: 0 1px 8px rgba(32, 33, 36, 0.38);
+    border-color: #4285f4;
+    
+}
+
+#searchinputp1 {
+    border: none;
+    width: 28vw;
+    height: 40px;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    color: white;
+    
+}
+
+#searchicon {
+    height: 24px;
+    width: 24px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    filter: invert();
+}
+
+.searchbarp1 button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    padding: 6px;
+    border-radius: 50%;
+   
+}
+
+.leftcontent>* {
+    margin: 4vh 0;
+}
+

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/sunny2.jpg");
+    background-size: cover;
+    color: whitesmoke;
+    
+}
+.mainleft{
+    height: 100vh;
+    width: 70vw;
+    /* border: 2px solid red; */
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: 4vw;
+}
+nav img{
+    height: 70px;
+}
+
+.mainright{
+    height: 100vh;
+    width: 30vw;  
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    backdrop-filter: blur(15px);       
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 31, 88, 0.104);
+}
+
+.maintemp{
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: absolute;
+    bottom: 0;      
+    left: 0;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+#searchinput{
+    
+    width: 20vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    
+}
+#searchinput:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+#searchicon{
+    height: 20px;
+    filter: invert();
+    
+}
+.searchbar button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;   
+}
+table {
+    border-spacing: 0 4vh;
+    
+}
+table td:nth-child(2) {
+    text-align: right;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$weather-container$$$$$$$$$$$$$$$$$$$*/
+.weather-container {
+    display: flex;
+    align-items: center;
+    gap: 1.8vw;
+    margin-left: 4vw;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #020202;
+}
+
+.temperature {
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.city {
+    font-size: 3.2vw;
+}
+
+.date {
+    font-size: 1.3vw;
+    margin-top: 0.3vw;
+    
+}
+
+.icon {
+    font-size: 3vw;
+}

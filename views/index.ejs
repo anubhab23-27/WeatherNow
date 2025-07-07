@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherNow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  
+  <body>
+    <div class="main">
+      <div class="mainleft">
+        <nav>
+          <img src="images\3d-weather-icon-day-free-png.png" alt="weatherapp logo">
+          <h3 style="font-family: 'Inter', sans-serif;">WeatherNow</h3>
+        </nav>
+        <div class="maintemp">
+          
+          <div class="weather-container">
+            <div class="temperature"><%=content.main.temp%>°</div>
+            <div class="info">
+              <div class="city"><%= content.name %></div>
+              <div class="date"><p id="dateDisplay">06:09 - Monday, 9 Sep 23</p></div>
+            </div>
+            <div class="icon">☁️</div>
+          </div>
+           
+        </div>
+      </div>
+      <div class="mainright">
+        
+          <form method="POST" action="/location" class="searchbar">
+            <input id="searchinput" type="text" name="location" autocomplete="off" placeholder="search Location..." >
+            <button type="submit">
+              <img id="searchicon" src="images/search.png" alt="search icon">
+            </button>
+          </form>
+        <hr style="height:1.5px;background-color: white;border: none;">
+        <div class="details">
+          <p style="margin: 30px 0px 40px 0px;">Weather Details...</p>
+          <h3><%=content.weather[0].description.toUpperCase()%></h3>
+          <table>
+            <colgroup>
+              <col style="width: 70%;">
+              <col style="width: 10%;">
+            </colgroup>
+            
+            <tr><td>Temp max</td><td><%= content.main.temp_max %>°</td></tr>
+            <tr><td>Temp min</td><td><%= content.main.temp_min %>°</td></tr>
+            <tr><td>Humidity</td><td><%= content.main.humidity %>%</td></tr>
+            <tr><td>Cloudy</td><td><%= content.clouds.all %>%</td></tr>
+            <tr><td>Wind</td><td><%= content.wind.speed%>km/h</td></tr>
+          </table>
+          
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

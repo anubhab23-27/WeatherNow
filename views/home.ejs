@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="images/3d-weather-icon-day-free-png.png" alt="weatherapp logo" />
+        <h3 style="font-family: 'Inter', sans-serif">WeatherNow</h3>
+      </div>
+      <div class="date">
+        <p id="dateDisplay">Monday, 9 Sep 23</p>
+      </div>
+    </nav>
+    <div class="start">
+      <div class="startleft">
+        <div class="leftcontent">
+          <h1 style="font-family: 'Poppins', sans-serif;">Welcome to WeatherNow</h1>
+          <p>Access current weather data for any location around the world, including cities, towns, and GPS coordinates.
+            Get real-time information such as temperature, humidity, wind speed, and weather conditions.</p>
+          <form method="POST" action="/location" class="searchbarp1">
+            <input
+              id="searchinputp1"
+              autocomplete="off"
+              type="text"
+              name="location"
+              placeholder="search Location..."
+            />
+            <button type="submit">
+              <img id="searchicon" src="images/search.png" alt="search icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="startright">
+        
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
